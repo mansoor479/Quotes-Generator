@@ -9,7 +9,7 @@ function QuoteBox() {
   const getQuote = async () => {
     try {
         //I use the API from alexendra she posted in the slack   random channel
-
+        // I use the fetch method 
       const res = await fetch('https://quoteslate.vercel.app/api/quotes/random');
       const data = await res.json();
       setQuote(data.content);
